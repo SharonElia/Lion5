@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite guice-stage="DEVELOPMENT" name="fw1 suite" verbose="10">
+	<listeners>
+		<listener class-name="testNG.TestNGListeners"></listener>
+	</listeners>
+	<test name="Default test" verbose="2" group-by-instances="true">
+		<classes>
+			<class name="AutomationFW.fw1.Excecution1" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->

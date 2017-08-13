@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env>
+	<browser>chrome</browser>
+	<ChromeDriverPath>.//lib\drivers\chromeDriver\\chromedriver.exe</ChromeDriverPath>
+	<FireFoxDriverPath>.\\lib\\drivers\\firefoxDriver\\geckodriver.exe</FireFoxDriverPath>
+	<implicitlyWaitTime>10</implicitlyWaitTime>
+</env>
+
