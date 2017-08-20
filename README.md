@@ -1,4 +1,4 @@
 # Lion5
-Selenium Project
-Read from Files+ DB
+Selenium Project,
+Read from Files+ DB,
 Calc Autotest
