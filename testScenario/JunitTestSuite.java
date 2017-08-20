@@ -10,8 +10,8 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
         CalcTest.class,
-        ShippingToCase.class,
-        FilesTest.class
+       //ShippingTo.class,
+       //FilesTest.class
 })
 public class JunitTestSuite {
 

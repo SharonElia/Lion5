@@ -1,20 +1,21 @@
 package SharonProject.testScenario;
-
+import jdk.internal.org.xml.sax.SAXException;
 import SharonProject.pageObjects.ShippingTo;
 import SharonProject.testNG.TestNGFramework;
 import SharonProject.utilities.Functions;
 import SharonProject.utilities.Log;
-import org.testng.Assert;
 import org.junit.Test;
-import org.xml.sax.SAXException;
+import org.testng.Assert;
+
 
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
+
 /**
  * Created by SMaymonX054905 on 07/08/2017.
  */
 public class ShippingToCase extends TestNGFramework {
-
+    static SharonProject.utilities.Functions E;
     public   ShippingToCase() {
     }
 
@@ -25,7 +26,7 @@ public class ShippingToCase extends TestNGFramework {
            Log.startTC("Shipping To");
             driver.get("https://www.wooloverslondon.com/");
             Thread.sleep(4000);
-        //    initReportTest("test1_ShippingTo", "verify: SharonTest");
+           E.initReportTest("test2_ShippingTo", "verify: Shipping Report");
             ShippingTo.PopUpA(driver).click();
             Thread.sleep(4000);
             ShippingTo.PopUpB(driver).click();
@@ -42,13 +43,13 @@ public class ShippingToCase extends TestNGFramework {
             Thread.sleep(6000);
             Log.endTC("Shipping To");
         } catch (Exception var8) {
-            Functions.screenShot(driver, "Shipping To", Functions.timeStamp());
+            E.screenShot(driver, "Shipping To", Functions.timeStamp());
             Log.error(var8);
-        //    Assert.fail("Error: " + var8);
+            Assert.fail("Error: " + var8);
         } catch (AssertionError var9) {
-            Functions.screenShot(driver, "Shipping To", Functions.timeStamp());
+            E.screenShot(driver, "Shipping To", Functions.timeStamp());
             Log.error(var9);
-         //   Assert.fail("Error: " + var9);
+            Assert.fail("Error: " + var9);
         } finally {
            driver.get("https://www.wooloverslondon.com/");
         }
